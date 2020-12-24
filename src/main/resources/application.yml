@@ -1,0 +1,12 @@
+server:
+  port: 9323
+spring:
+  profiles:
+    active: dev
+  application:
+    name: server
+mybatis:
+  mapper-locations: classpath:mybatis/*.xml
+  type-aliases-package: com.huateng.entity.po
+  configuration:
+    map-underscore-to-camel-case: true
